@@ -1,6 +1,6 @@
 package swd.dataobject;
 
-import lombok.Builder;
+
 import lombok.Data;
 import org.hibernate.annotations.DynamicUpdate;
 

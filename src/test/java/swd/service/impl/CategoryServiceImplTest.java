@@ -46,10 +46,10 @@ public class CategoryServiceImplTest
     public void save()
     {
         ProductCategory productCategory =new ProductCategory();
-        productCategory.setCategoryType(4);
-        productCategory.setCategoryName("好好吃");
+        productCategory.setCategoryType(3);
+        productCategory.setCategoryName("热销榜");
         ProductCategory result = categoryService.save(productCategory);
-        Assert.assertEquals(4, result.getCategoryType().longValue());
+        Assert.assertEquals(2, result.getCategoryType().longValue());
 
     }
 }
