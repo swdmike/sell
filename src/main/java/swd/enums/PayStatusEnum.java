@@ -2,17 +2,20 @@ package swd.enums;
 
 import lombok.Getter;
 
+/**
+ * Created by swd on 2018/7/24
+ */
 @Getter
-public enum ProductStatusEnum
+public enum PayStatusEnum
 {
-    UP(0, "在架"),
-    DOWN(1, "下架");
+    WAIT(0,"等待支付"),
+    SUCCESS(1,"支付成功");
 
     private Integer code;
 
     private String message;
 
-    ProductStatusEnum(Integer code, String message) {
+    PayStatusEnum(Integer code, String message) {
         this.code = code;
         this.message = message;
     }
